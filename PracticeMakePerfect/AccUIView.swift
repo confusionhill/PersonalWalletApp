@@ -28,6 +28,7 @@ struct AccUIView: View {
                         //Mark : Card Content
                         cardContent()
                     )
+                    .padding(.top,60)
                 Spacer()
                 ZStack{
                     Rectangle()
@@ -36,9 +37,14 @@ struct AccUIView: View {
                     RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                         .frame(width:UIScreen.main.bounds.size.width-30,height: 610)
                         .padding(.bottom)
-                        //.padding()
+                        .padding(.top,20)
                         .foregroundColor(.white)
+                        
                     // Mark : The Content of the bottom of the app
+                    VStack{
+                        Text("makan")
+                        Spacer()
+                    }.padding(.top,40)
                 }
                 .ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
                 .padding(.top)

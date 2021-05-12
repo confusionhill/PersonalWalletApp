@@ -19,7 +19,7 @@ import SwiftUI
  */
 struct ContentView: View {
     @State var search:String = ""
-    
+    @State var showModal:Bool = false
     var body: some View {
         ZStack {
             Color(.purple).ignoresSafeArea(edges: .top)
@@ -60,12 +60,15 @@ struct ContentView: View {
                                     .padding(.bottom)
                                     .foregroundColor(.white)
                             // Mark : The Content of the bottom of the app
-                            bottomContent()
+                            bottomContent(showModal: self.$showModal)
                         }.ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
                     }
                 }
             }
-        }
+        }.fullScreenCover(isPresented: self.$showModal, content: {
+            //Mark : Transaction modal
+            transactionModal(showModal: self.$showModal)
+        })
     }
 }
 
@@ -171,13 +174,16 @@ struct ProgressBar: View {
 }
 
 struct bottomContent: View {
+    @Binding var showModal:Bool;
     var body: some View {
         VStack{
             HStack {
                 Text("Transactions")
                     .font(.title)
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    self.showModal.toggle()
+                }) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 70, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -222,5 +228,30 @@ struct subBottomContent: View {
             Spacer()
             Text("+$200").foregroundColor(.green)
         }.padding(.top,30)
+    }
+}
+
+struct transactionModal: View {
+    @Binding var showModal:Bool
+    var body: some View {
+        VStack {
+            HStack {
+                Text("Transactions")
+                    .font(.title3)
+                Spacer()
+            }
+            ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false) {
+                VStack() {
+                    subBottomContent()
+                    subBottomContent()
+                    subBottomContent()
+                    Spacer()
+                }
+            }
+            Spacer()
+            Button("close"){
+                self.showModal.toggle()
+            }.foregroundColor(.red)
+        }.padding(.horizontal)
     }
 }
