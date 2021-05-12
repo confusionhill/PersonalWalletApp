@@ -13,6 +13,9 @@
 		FFF58EC2264AC5880002B446 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF58EC1264AC5880002B446 /* Preview Assets.xcassets */; };
 		FFF58ECD264AC5880002B446 /* PracticeMakePerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58ECC264AC5880002B446 /* PracticeMakePerfectTests.swift */; };
 		FFF58ED8264AC5880002B446 /* PracticeMakePerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58ED7264AC5880002B446 /* PracticeMakePerfectUITests.swift */; };
+		FFF58EE9264AD7590002B446 /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58EE8264AD7590002B446 /* UIController.swift */; };
+		FFF58EEE264BE19F0002B446 /* AccUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58EED264BE19F0002B446 /* AccUIView.swift */; };
+		FFF58EF3264BE2C60002B446 /* addNewItemUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58EF2264BE2C60002B446 /* addNewItemUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		FFF58ED3264AC5880002B446 /* PracticeMakePerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeMakePerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF58ED7264AC5880002B446 /* PracticeMakePerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeMakePerfectUITests.swift; sourceTree = "<group>"; };
 		FFF58ED9264AC5880002B446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF58EE8264AD7590002B446 /* UIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
+		FFF58EED264BE19F0002B446 /* AccUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccUIView.swift; sourceTree = "<group>"; };
+		FFF58EF2264BE2C60002B446 /* addNewItemUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewItemUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 			children = (
 				FFF58EBA264AC5870002B446 /* PracticeMakePerfectApp.swift */,
 				FFF58EBC264AC5870002B446 /* ContentView.swift */,
+				FFF58EE8264AD7590002B446 /* UIController.swift */,
+				FFF58EF2264BE2C60002B446 /* addNewItemUI.swift */,
+				FFF58EED264BE19F0002B446 /* AccUIView.swift */,
 				FFF58EBE264AC5880002B446 /* Assets.xcassets */,
 				FFF58EC3264AC5880002B446 /* Info.plist */,
 				FFF58EC0264AC5880002B446 /* Preview Content */,
@@ -261,6 +270,9 @@
 			files = (
 				FFF58EBD264AC5870002B446 /* ContentView.swift in Sources */,
 				FFF58EBB264AC5870002B446 /* PracticeMakePerfectApp.swift in Sources */,
+				FFF58EEE264BE19F0002B446 /* AccUIView.swift in Sources */,
+				FFF58EE9264AD7590002B446 /* UIController.swift in Sources */,
+				FFF58EF3264BE2C60002B446 /* addNewItemUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

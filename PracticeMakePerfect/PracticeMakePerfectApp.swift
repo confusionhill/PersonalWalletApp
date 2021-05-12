@@ -11,7 +11,7 @@ import SwiftUI
 struct PracticeMakePerfectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UIController()
         }
     }
 }
