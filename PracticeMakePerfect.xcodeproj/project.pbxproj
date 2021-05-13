@@ -16,6 +16,10 @@
 		FFF58EE9264AD7590002B446 /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58EE8264AD7590002B446 /* UIController.swift */; };
 		FFF58EEE264BE19F0002B446 /* AccUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58EED264BE19F0002B446 /* AccUIView.swift */; };
 		FFF58EF3264BE2C60002B446 /* addNewItemUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58EF2264BE2C60002B446 /* addNewItemUI.swift */; };
+		FFF58EFA264C75890002B446 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58EF9264C75890002B446 /* userModel.swift */; };
+		FFF58F06264D60A00002B446 /* homeLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58F05264D60A00002B446 /* homeLogin.swift */; };
+		FFF58F0B264D62B00002B446 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58F0A264D62B00002B446 /* extentions.swift */; };
+		FFF58F10264D64F50002B446 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF58F0F264D64F50002B446 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		FFF58EE8264AD7590002B446 /* UIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
 		FFF58EED264BE19F0002B446 /* AccUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccUIView.swift; sourceTree = "<group>"; };
 		FFF58EF2264BE2C60002B446 /* addNewItemUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewItemUI.swift; sourceTree = "<group>"; };
+		FFF58EF9264C75890002B446 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		FFF58F05264D60A00002B446 /* homeLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeLogin.swift; sourceTree = "<group>"; };
+		FFF58F0A264D62B00002B446 /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		FFF58F0F264D64F50002B446 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,14 @@
 		FFF58EB9264AC5870002B446 /* PracticeMakePerfect */ = {
 			isa = PBXGroup;
 			children = (
+				FFF58EF7264C75670002B446 /* Model */,
 				FFF58EBA264AC5870002B446 /* PracticeMakePerfectApp.swift */,
 				FFF58EBC264AC5870002B446 /* ContentView.swift */,
 				FFF58EE8264AD7590002B446 /* UIController.swift */,
 				FFF58EF2264BE2C60002B446 /* addNewItemUI.swift */,
+				FFF58F04264D60850002B446 /* Login */,
 				FFF58EED264BE19F0002B446 /* AccUIView.swift */,
+				FFF58F0A264D62B00002B446 /* extentions.swift */,
 				FFF58EBE264AC5880002B446 /* Assets.xcassets */,
 				FFF58EC3264AC5880002B446 /* Info.plist */,
 				FFF58EC0264AC5880002B446 /* Preview Content */,
@@ -137,6 +148,31 @@
 				FFF58ED9264AC5880002B446 /* Info.plist */,
 			);
 			path = PracticeMakePerfectUITests;
+			sourceTree = "<group>";
+		};
+		FFF58EF7264C75670002B446 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFF58EF8264C75700002B446 /* ViewModel */,
+				FFF58EF9264C75890002B446 /* userModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFF58EF8264C75700002B446 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFF58F04264D60850002B446 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FFF58F05264D60A00002B446 /* homeLogin.swift */,
+				FFF58F0F264D64F50002B446 /* LoginScreen.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF58EBD264AC5870002B446 /* ContentView.swift in Sources */,
+				FFF58F06264D60A00002B446 /* homeLogin.swift in Sources */,
+				FFF58F10264D64F50002B446 /* LoginScreen.swift in Sources */,
 				FFF58EBB264AC5870002B446 /* PracticeMakePerfectApp.swift in Sources */,
 				FFF58EEE264BE19F0002B446 /* AccUIView.swift in Sources */,
+				FFF58F0B264D62B00002B446 /* extentions.swift in Sources */,
 				FFF58EE9264AD7590002B446 /* UIController.swift in Sources */,
+				FFF58EFA264C75890002B446 /* userModel.swift in Sources */,
 				FFF58EF3264BE2C60002B446 /* addNewItemUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
